@@ -28,7 +28,7 @@ try:
 except requests.exceptions.ConnectionError:
 	exit('%s[%s!%s] %sCheck internet'%(W0,R0,W0,W0))
 except IndexError:
-	exit('%s[%s!%s] %sUse : python2 %s web-list.txt 30 \n%s[%s!%s] %sFill in target.txt with http/https'%(W0,R0,W0,W0,sys.argv[0],W0,R0,W0,W0))
+	exit('%s[%s!%s] %sUse : python2 %s web-list.txt 30'%(W0,R0,W0,W0,sys.argv[0]))
 except IOError:
 	exit('%s[%s!%s] %sFile does not exist'%(W0,R0,W0,W0))
 except KeyboardInterrupt:
