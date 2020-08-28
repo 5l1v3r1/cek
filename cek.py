@@ -9,7 +9,7 @@ import requests,sys,os
 from multiprocessing.pool import ThreadPool
 def scan(web):
 	try:
-		cek=requests.get('http://'+web).url
+		cek=requests.get('http://'+web,timeout=10).url
 		print '%s[%s>%s] %s'%(W0,G0,W0,cek)
 		open('results.txt','a+').write(cek+'\n')
 	except:
